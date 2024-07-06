@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Riska</title>
+  <script src="
+  https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js
+  "></script>
+  <link href="
+  https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css
+  " rel="stylesheet">
+  <link rel="stylesheet" href="main.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Playwrite+NO:wght@100..400&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Playwrite+NO:wght@100..400&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <header>
+    <div class="content">
+      <h1 class="mainTitle" style="margin-bottom: 0;">Hello Riska</h1>
+      <h2 class="mainTitle" style="margin-top: 0;">Scroll ke bawah yah cantik</h2>
+      <h3 id="scroll">Scroll ke bawah</h3>
+    </div>
+  </header>
+
+  <div class="section_2" id="section_2">
+    <div class="header">
+      <audio class="reveal" src="audio/song.mp3" style="margin-bottom: 20px;" controls=""></audio>
+      <p class="reveal" style="margin-bottom: 100px;"> Untuk experience yang lebih baik, bisa nyalain lagu yah</p>
+      <h1 class="reveal mainTitle">Riska si manis</h1>
+    </div>
+
+    <div class="body">
+      <p class="reveal">Aku enggak pandai berkata-kata, tapi semoga ini bisa bikin kamu senang</p>
+      <p class="reveal">Riska, bunga hitam yang mekar di malam hari,
+        Dalam kegelapan, engkau tetap berseri.
+        Seperti mie yang menghangatkan hati,
+        Kehadiranmu memberi rasa yang tak terperi.</p>
+      <p class="reveal">Kecantikanmu memukau, menggemaskan setiap pandang,
+        Dengan senyum manis yang selalu terang.
+        Pintar dalam setiap langkah dan karya,
+        Engkau menunjukkan arti sejati dari bahagia.</p>
+      <p class="reveal">Ketika dunia tampak berat dan kelam,
+        Ingatlah, engkau adalah bintang di malam.
+        Kuat dan tangguh, hadapi segalanya dengan gagah,
+        Karena di hatimu, ada sinar yang tak pernah lelah.</p>
+      <p class="reveal">Riska, jangan pernah ragu pada dirimu,
+        Setiap tantangan akan kau lalui dengan gemilang.
+        Engkau wanita luar biasa, tiada duanya,
+        Teruslah bersinar, seindah bunga hitam yang selalu ada.</p>
+
+
+        <section class="splide reveal" aria-label="Splide Basic HTML Example">
+          <div class="splide__track">
+            <ul class="splide__list">
+              <li class="splide__slide">
+                <img class="reveal" src="aset/1.jpg" alt="">
+              </li>
+              <li class="splide__slide">
+                <img class="reveal" src="aset/5.jpg" alt="">
+              </li>
+              <li class="splide__slide">
+                <img class="reveal" src="aset/3.jpg" alt="">
+              </li>
+              <li class="splide__slide">
+                <img class="reveal" src="aset/6.jpg" alt="">
+              </li>
+              <li class="splide__slide">
+                <img class="reveal" src="aset/7.jpg" alt="">
+              </li>
+   
+            </ul>
+          </div>
+        </section>
+
+      <P class="reveal" style="margin-bottom: 5px;">Tetap semangat yah Riska, kamu pasti bisa.
+      </P>
+
+      <p class="reveal" style="margin-bottom: 5px;">Always love you.</p>
+      <p class="reveal mainTitle"><strong>Andrew</strong> </p>
+  
+    </div>
+
+  </div>
+
+  <script>
+    window.addEventListener('scroll', reveal);
+    function reveal() {
+      var reveals = document.querySelectorAll('.reveal');
+      for (var i = 0; i < reveals.length; i++) {
+        var windowheight = window.innerHeight;
+        var revealtop = reveals[i].getBoundingClientRect().top;
+        var revelpoint = 25;
+
+        if (revealtop < windowheight - revelpoint) {
+          reveals[i].classList.add('active');
+        }
+      }
+
+    }
+  </script>
+  <script>
+    new Splide( '.splide',{
+      type   : 'loop',
+      autoplay: true,
+    } ).mount();
+  </script>
+  <script src="main.js"></script>
+</body>
+
+</html>
